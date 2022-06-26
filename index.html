@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/src/final.css">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+<body class="bg-almostwhite font-epilogue">
+  <header class="mb-4">
+    <!--NAV MOBILE-->
+    <nav class="flex justify-between items-center ative p-4 lg:hidden">
+      <img src="../images/logo.svg" alt="logo" class="inline-block"/>
+      <button class="boton-menu hover:cursor-pointer"><img src="../images/icon-menu.svg" alt="icon-menu"></button>
+      <div class="menu-movil absolute right-0 top-0 h-screen bg-white p-4 w-64 hidden">
+        <button class="boton-menu-cerrar flex ml-auto hover:cursor-pointer"><img src="../images/icon-close-menu.svg" class="w-5" alt="icon-close-menu"></button>
+        <div class="flex flex-col mt-8 text-sm">
+          <a class="features mr-10 my-2 inline-flex after:content-['˅'] after:ml-2.5 after:text-xl after:text-sm opacity-75 hover:opacity-100 transition ease-in-out duration-200">Features</a>
+            <div class="features-box my-5 ml-4 hidden">
+              <a href="#" class="flex items-center mb-4 opacity-75 hover:opacity-100 transition ease-in-out duration-200"><img src="../images/icon-todo.svg" alt="to-do-list" class="mr-2.5 w-4">Todo List</a>
+              <a href="#" class="flex items-center my-4 opacity-75 hover:opacity-100 transition ease-in-out duration-200"><img src="../images/icon-calendar.svg" alt="calendar" class="mr-2.5 w-4">Calendar</a>
+              <a href="#" class="flex items-center my-4 opacity-75 hover:opacity-100 transition ease-in-out duration-200"><img src="../images/icon-reminders.svg" alt="reminders" class="mr-2.5 w-4">Reminders</a>
+              <a href="#" class="flex items-center mt-4 opacity-75 hover:opacity-100 transition ease-in-out duration-200"><img src="../images/icon-planning.svg" alt="planning" class="mr-2.5 w-4">Planning</a>
+            </div>
+          <a class="company mr-10 my-2 inline-flex after:content-['˅'] after:ml-2.5 after:text-xl after:text-sm opacity-75 hover:opacity-100 transition ease-in-out duration-200">Company</a>
+            <div class="company-box my-5 ml-4 hidden">
+              <a href="#" class="flex items-center mb-4 opacity-75 hover:opacity-100 transition ease-in-out duration-200">History</a>
+              <a href="#" class="flex items-center my-4 opacity-75 hover:opacity-100 transition ease-in-out duration-200">Our Team</a>
+              <a href="#" class="flex items-center mt-4 opacity-75 hover:opacity-100 transition ease-in-out duration-200">Blog</a>
+            </div>
+          <a href="#" class="mr-10 my-2 opacity-75 hover:opacity-100 transition ease-in-out duration-200">Careers</a>
+          <a href="#" class="mr-10 my-2 opacity-75 hover:opacity-100 transition ease-in-out duration-200">About</a>
+        </div>
+        <div class="text-center text-sm mt-5">
+          <a href="#" class="opacity-75 hover:opacity-100 transition ease-in-out duration-200">Login</a>
+          <a href="#" class="mt-3 py-2 block w-full mx-auto border-black border-2 rounded-xl opacity-75 hover:opacity-100 transition ease-in-out duration-200">Register</a>
+        </div>
+      </div>
+    </nav>
+    <!--NAV DESKTOP-->
+    <nav class="hidden lg:flex justify-between relative p-10">
+      <div class="inline-flex">
+        <img src="../images/logo.svg" alt="logo" class="inline-block mr-14"/>
+        <a class="features cursor-pointer mr-10 inline-flex after:content-['˅'] after:ml-1.5 after:text-xl opacity-75 hover:opacity-100 transition ease-in-out duration-200">Features</a>
+        <div class="features-box shadow-xl absolute top-20 left-28 p-6 rounded-lg bg-white hidden">
+          <a href="#" class="flex items-center mb-4 opacity-75 hover:opacity-100 transition ease-in-out duration-200"><img src="../images/icon-todo.svg" alt="to-do-list" class="mr-2.5 w-4">Todo List</a>
+          <a href="#" class="flex items-center my-4 opacity-75 hover:opacity-100 transition ease-in-out duration-200"><img src="../images/icon-calendar.svg" alt="calendar" class="mr-2.5 w-4">Calendar</a>
+          <a href="#" class="flex items-center my-4 opacity-75 hover:opacity-100 transition ease-in-out duration-200"><img src="../images/icon-reminders.svg" alt="reminders" class="mr-2.5 w-4">Reminders</a>
+          <a href="#" class="flex items-center mt-4 opacity-75 hover:opacity-100 transition ease-in-out duration-200"><img src="../images/icon-planning.svg" alt="planning" class="mr-2.5 w-4">Planning</a>
+        </div>
+        <a class="company cursor-pointer mr-10 inline-flex after:content-['˅'] after:ml-1.5 after:text-xl opacity-75 hover:opacity-100 transition ease-in-out duration-200">Company</a>
+        <div class="company-box shadow-xl absolute top-20 left-72 p-6 rounded-lg bg-white hidden">
+          <a href="#" class="flex items-center mb-4 opacity-75 hover:opacity-100 transition ease-in-out duration-200">History</a>
+          <a href="#" class="flex items-center my-4 opacity-75 hover:opacity-100 transition ease-in-out duration-200">Our Team</a>
+          <a href="#" class="flex items-center mt-4 opacity-75 hover:opacity-100 transition ease-in-out duration-200">Blog</a>
+        </div>
+        <a href="#" class="mr-10 opacity-75 hover:opacity-100 transition ease-in-out duration-200">Careers</a>
+        <a href="#" class="mr-10 opacity-75 hover:opacity-100 transition ease-in-out duration-200">About</a>
+      </div>
+    
+      <div>
+        <a href="#" class="mx-6 opacity-75 hover:opacity-100 transition ease-in-out duration-200">Login</a>
+        <a href="#" class="mx-4 py-3.5 px-5 border-black border-2 rounded-xl opacity-75 hover:opacity-100 transition ease-in-out duration-200">Register</a>
+      </div>
+    </nav>
+  </header>
+  <main class="flex flex-col md:flex-row md:m-14 lg:my-16 lg:mx-24 lg:justify-evenly">
+    <img src="../images/image-hero-mobile.png" class="md:hidden" alt="image-hero">
+    <section class="text-center my-14 mx-2.5 md:text-left lg:flex lg:flex-col lg:items-">
+      
+      <h2 class="text-4xl font-bold md:text-7xl lg:w-30 lg:text-7xl">Make remote work</h2>
+
+      <p class="my-6 text-mediumgray text-xl md:my-10 lg:w-30">Get your team in sync, no matter your location. Streamline processes, 
+      create team rituals, and watch productivity soar.</p>
+    
+      <a href="#" class="inline-block text-center mt-2.5 bg-almostblack text-white py-5 px-8 text-xl rounded-[18px] border-2 border-almostwhite hover:bg-almostwhite
+        hover:text-almostblack hover:border-2 hover:border-almostblack transition ease-in-out duration-200 lg:w-48">Learn more</a>
+      
+      <div class="flex flex-wrap items-center justify-center mt-8 md:mt-12 md:flex md:justify-start lg:mt-32 lg:flex-nowrap">
+        <img src="../images/client-databiz.svg" class="m-4 w-16 sm:w-28" alt="databiz">
+        <img src="../images/client-audiophile.svg" class="m-4 w-12 sm:w-20" alt="audiophile">
+        <img src="../images/client-meet.svg" class="m-4 w-16 sm:w-28" alt="meet">
+        <img src="../images/client-maker.svg" class="m-4 w-16 sm:w-28" alt="maker">
+      </div>
+    </section>
+    <img src="../images/image-hero-desktop.png" class="hidden md:block m-auto w-30 pl-6 lg:w-34 lg:m-0" alt="image-hero">
+  </main>
+
+<script>
+  let boton = document.querySelector(".boton-menu");
+  let botonCerrar = document.querySelector(".boton-menu-cerrar");
+  let menu = document.querySelector(".menu-movil");
+  let features = document.querySelectorAll(".features");
+  let company = document.querySelectorAll(".company");
+  let cajaFeatures = document.querySelectorAll(".features-box");
+  let cajaCompany = document.querySelectorAll(".company-box");
+
+  boton.addEventListener("click", () => {
+
+    menu.classList.remove("hidden");
+    document.querySelector(".menu-fondo").classList.remove("hidden");
+    menu.style.zIndex = "2";
+
+  });
+  
+  botonCerrar.addEventListener("click", () => {
+
+    menu.classList.add("hidden");
+    document.querySelector(".menu-fondo").classList.add("hidden");
+  })
+
+  features.forEach(feat => {
+
+    feat.addEventListener("click", () => {
+
+      cajaFeatures.forEach(cajaF => {
+
+        cajaF.classList.toggle("hidden");
+      })
+    })
+  })
+
+  company.forEach(comp => {
+
+    comp.addEventListener("click", () => {
+
+      cajaCompany.forEach(cajaC => {
+
+        cajaC.classList.toggle("hidden");
+      })
+    })
+  })
+</script>
+<div class="menu-fondo w-screen h-screen bg-almostblack opacity-40 fixed top-0 left-0 hidden"></div>
+</body>
+</html>
